@@ -1,0 +1,2456 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Practica Python </title>
+            <meta charset="UTF-8" />
+            <style>
+                table { border-top:3px;border-bottom:3px }
+                td { font-size:14px; padding:10px }
+            </style>
+        </head>
+        <body>
+            <table border="1" width="100%">
+                <tr style="background-color:#0000ff">
+                    <th rowspan="2" style="font-size:18px">Nom</th>
+                    <th rowspan="2" style="font-size:18px">Adreça</th>
+                    <th rowspan="2" style="font-size:18px">Descripció</th>
+                    <th width ="25%" colspan="3" style="font-size:18px">
+                        Aparcaments disponibles
+                    </th>
+                    <th width ="25%" colspan="3" style="font-size:18px">
+                        Bicicletes disponibles
+                    </th>
+                </tr>
+                <tr style="background-color:#0000ff">
+                    <th>Adreça</th>
+                    <th>Distancia(m)</th>
+                    <th>Llocs</th>
+                    <th>Adreça</th>
+                    <th>Distancia(m)</th>
+                    <th>Bicis</th>
+                </tr>
+                
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">L'Aqüeducte del Parc Central de Nou Barris</td>
+                            <td rowspan="5">Pl Major de Nou Barris 1</td>
+                            <td rowspan="5"><p>L’aqüeducte de Dosrius era una enorme infraestructura hidràulica de més de 50 quilòmetres que travessava l’actual districte de Nou Barris, i anava des de la riera d’Argentona del municipi de Dosrius, al Maresme, fins al barri de Gràcia. Es va construir a la segona meitat del segle XIX, quan el creixement del barri de l’Eixample va fer que augmentés la demanda d’aigua a Barcelona. </p></td>
+                            <td>Marie Curie 8</td>
+                            <td>133.423</td>
+                            <td>27</td>
+                            <td>Pla&ccedil;a dels Jardins d&#039;Alf&agrave;bia 1</td>
+                            <td>238.369</td>
+                            <td>9</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Seu del Districte (Nou Barris)</td>
+                                <td>66.157</td>
+                                <td>26</td>
+                                <td>Seu del Districte (Nou Barris)</td>
+                                <td>66.157</td>
+                                <td>0</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Carrer de l&#039;Escultor Ord&oacute;&ntilde;ez 55</td>
+                                <td>459.071</td>
+                                <td>26</td>
+                                <td>Sant Iscle 60</td>
+                                <td>374.717</td>
+                                <td>0</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Sant Iscle 60</td>
+                                <td>374.717</td>
+                                <td>25</td>
+                                <td>Carrer de l&#039;Escultor Ord&oacute;&ntilde;ez 55</td>
+                                <td>459.071</td>
+                                <td>0</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Pla&ccedil;a dels Jardins d&#039;Alf&agrave;bia 1</td>
+                                <td>238.369</td>
+                                <td>16</td>
+                                <td>Marie Curie 8</td>
+                                <td>133.423</td>
+                                <td>0</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc de les Aigües</td>
+                            <td rowspan="5">Pl Alfons el Savi 3</td>
+                            <td rowspan="5"><p>El parc es troba edificat sobre terrenys de l’antiga Companyia d’Aigües de Barcelona. Forma una illa muntanyosa amb nombroses terrasses independents separades per murs de pedra i camins. La majoria de terrasses són zones per al descans, però també hi ha tres àrees de jocs infantils, una pista poliesportiva, una altra de petanca, espais per a gossos, una font i una zona de pícnic a l’ombra. </p></td>
+                            <td>Ronda Guinardo 83</td>
+                            <td>452.038</td>
+                            <td>25</td>
+                            <td>Balcells 48</td>
+                            <td>458.614</td>
+                            <td>4</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Balcells 48</td>
+                                <td>458.614</td>
+                                <td>21</td>
+                                <td>Pla&ccedil;a Alfons X el Savi / Ronda del Guinard&oacute; </td>
+                                <td>154.803</td>
+                                <td>2</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Pla&ccedil;a Alfons X el Savi / Ronda del Guinard&oacute; </td>
+                                <td>154.803</td>
+                                <td>19</td>
+                                <td>Ronda Guinardo 83</td>
+                                <td>452.038</td>
+                                <td>0</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">El Parc del Fòrum</td>
+                            <td rowspan="5">Pl Fòrum 1</td>
+                            <td rowspan="5"><p>Construïda l’any 2004 arran de la inauguració del Fòrum de les Cultures, la pèrgola fotovoltaica és una de les centrals solars més importants de l’Estat. El projecte és obra dels arquitectes Elías Torres i J. A. Martínez Lapeña i segueix un disseny característic de la nova arquitectura a Barcelona. La pèrgola produeix el consum equivalent al d’unes cent quaranta famílies barcelonines.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Fundació Barcelona Media - Centre d'Innovació</td>
+                            <td rowspan="5">Av Diagonal 177</td>
+                            <td rowspan="5"><p>Convertit en un centre referent del sector de la comunicació, el Parc Barcelona Media ofereix tot un seguit d’equipaments i serveis centrats en el món audiovisual i la comunicació, liderat per la Universitat Pompeu Fabra, i un centre dedicat a la producció audiovisual i els serveis a la indústria, que encapçala el Grup Mediapro, un gegant de la comunicació, amb el 22@Barcelona. </p></td>
+                            <td>Castella 28</td>
+                            <td>359.569</td>
+                            <td>22</td>
+                            <td>Bol&iacute;via 76</td>
+                            <td>234.395</td>
+                            <td>17</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Sancho de &Aacute;vila 104</td>
+                                <td>442.779</td>
+                                <td>19</td>
+                                <td>Pl. Valent&iacute; Amirall</td>
+                                <td>466.598</td>
+                                <td>15</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Sancho de &Aacute;vila 170</td>
+                                <td>237.635</td>
+                                <td>19</td>
+                                <td>Ciutat de Granada 168</td>
+                                <td>272.968</td>
+                                <td>14</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Roc Boronat 134</td>
+                                <td>99.052</td>
+                                <td>11</td>
+                                <td>Gran V&iacute;a 902</td>
+                                <td>342.806</td>
+                                <td>14</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Pl. Valent&iacute; Amirall</td>
+                                <td>466.598</td>
+                                <td>7</td>
+                                <td>Sancho de &Aacute;vila 104</td>
+                                <td>442.779</td>
+                                <td>13</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc Central de Nou Barris</td>
+                            <td rowspan="5">Pl Major de Nou Barris 1</td>
+                            <td rowspan="5"><p>El parc Central de Nou Barris és un dels més grans de la ciutat i una zona verda incomparable, amb més d’una trentena d’espècies d’arbres diferents. Gràcies a la seva situació i dimensions aconsegueix que ens sentim en plena natura dins l’urbs. A l'interior del parc hi ha alguns edificis d’innovació, com el Fòrum Nord de Tecnologia, i altres de més tradicionals, com ara les masies de Can Carreras i Can Ensenya.</p></td>
+                            <td>Marie Curie 8</td>
+                            <td>133.423</td>
+                            <td>27</td>
+                            <td>Pla&ccedil;a dels Jardins d&#039;Alf&agrave;bia 1</td>
+                            <td>238.369</td>
+                            <td>9</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Seu del Districte (Nou Barris)</td>
+                                <td>66.157</td>
+                                <td>26</td>
+                                <td>Seu del Districte (Nou Barris)</td>
+                                <td>66.157</td>
+                                <td>0</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Carrer de l&#039;Escultor Ord&oacute;&ntilde;ez 55</td>
+                                <td>459.071</td>
+                                <td>26</td>
+                                <td>Sant Iscle 60</td>
+                                <td>374.717</td>
+                                <td>0</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Sant Iscle 60</td>
+                                <td>374.717</td>
+                                <td>25</td>
+                                <td>Carrer de l&#039;Escultor Ord&oacute;&ntilde;ez 55</td>
+                                <td>459.071</td>
+                                <td>0</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Pla&ccedil;a dels Jardins d&#039;Alf&agrave;bia 1</td>
+                                <td>238.369</td>
+                                <td>16</td>
+                                <td>Marie Curie 8</td>
+                                <td>133.423</td>
+                                <td>0</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc Metropolità Collserola</td>
+                            <td rowspan="5">Ctra Església 92</td>
+                            <td rowspan="5"><p>La serra de Collserola, situada a l’àrea metropolitana de Barcelona, és el pulmó verd als afores del centre de la ciutat i un lloc d’esbarjo per a tots els que vulguin gaudir de la natura. Dins de la serra es troba el parc natural de Collserola, que està considerat espai protegit. Ple de miradors, rutes, masies i espais d’oci, Collserola és un lloc per gaudir de l’aire pur i la natura.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc de la Primavera</td>
+                            <td rowspan="5">C Nou de la Rambla 203</td>
+                            <td rowspan="5"><p>Malgrat que la seva principal funció és ser la seu de les instal·lacions del parc de neteja, res no impedeix que el parc de la Primavera sigui, també, una agradable zona verda amb àrees infantils, zones de descans i espais per a gossos. La seva vegetació variada, les rampes que en faciliten el trànsit i un refugi antiaeri són alguns dels motius per anar-hi. </p></td>
+                            <td>Passeig de l&#039;Exposici&oacute; 30</td>
+                            <td>327.391</td>
+                            <td>24</td>
+                            <td>Nou de la Rambla 164</td>
+                            <td>191.678</td>
+                            <td>2</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Nou de la Rambla 164</td>
+                                <td>191.678</td>
+                                <td>23</td>
+                                <td>Passeig de l&#039;Exposici&oacute; 30</td>
+                                <td>327.391</td>
+                                <td>0</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">El 22@</td>
+                            <td rowspan="5">C Roc Boronat 113</td>
+                            <td rowspan="5"><p>El futur a Barcelona té un nom, 22@. Un barri ubicat als terrenys més industrials del Poblenou on la innovació, la creativitat, el disseny i la tecnologia són el motor que ha reemplaçat les antigues fàbriques. Un nou model de ciutat que impulsa Barcelona cap a una renovació equilibrada i sostenible.</p></td>
+                            <td>Castella 28</td>
+                            <td>449.372</td>
+                            <td>22</td>
+                            <td>Pujades 173</td>
+                            <td>446.069</td>
+                            <td>24</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Sancho de &Aacute;vila 104</td>
+                                <td>290.624</td>
+                                <td>19</td>
+                                <td>Carrer Pujades 103</td>
+                                <td>400.525</td>
+                                <td>18</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Sancho de &Aacute;vila 170</td>
+                                <td>155.413</td>
+                                <td>19</td>
+                                <td>Pallars 462</td>
+                                <td>205.231</td>
+                                <td>17</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Pujades 121</td>
+                                <td>341.935</td>
+                                <td>14</td>
+                                <td>Bol&iacute;via 76</td>
+                                <td>357.736</td>
+                                <td>17</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Roc Boronat 134</td>
+                                <td>225.773</td>
+                                <td>11</td>
+                                <td>Sancho de &Aacute;vila 104</td>
+                                <td>290.624</td>
+                                <td>13</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc de la Barceloneta</td>
+                            <td rowspan="5">Pg Marítim Barceloneta 15</td>
+                            <td rowspan="5"><p>Per sota de la ronda del Litoral, el parc de la Barceloneta s’obre al costat de la platja, on es poden veure una gran varietat d’espècies vegetals. El parc manté el seu passat històric i els seus orígens industrials: s’hi conserva l’edifici modernista de la Torre de les Aigües, projectat per l’arquitecte Josep Domènech i Estapà l’any 1907.</p></td>
+                            <td>Passeig Mar&iacute;tim de la Barceloneta, devant del 5-7 5</td>
+                            <td>367.522</td>
+                            <td>22</td>
+                            <td>Pg Mar&iacute;tim Barceloneta 23</td>
+                            <td>337.49</td>
+                            <td>24</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Salvat Papasseit 72</td>
+                                <td>112.809</td>
+                                <td>20</td>
+                                <td>Passeig Maritim 31</td>
+                                <td>325.001</td>
+                                <td>19</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Passeig Mar&iacute;tim de la Barceloneta</td>
+                                <td>236.733</td>
+                                <td>19</td>
+                                <td>Trelawny 2</td>
+                                <td>194.959</td>
+                                <td>15</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Pl. Poeta Bosc&agrave;/Atl&agrave;ntida</td>
+                                <td>445.367</td>
+                                <td>6</td>
+                                <td>Pl. Poeta Bosc&agrave;/Atl&agrave;ntida</td>
+                                <td>445.367</td>
+                                <td>9</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Trelawny 2</td>
+                                <td>194.959</td>
+                                <td>3</td>
+                                <td>Salvat Papasseit 72</td>
+                                <td>112.809</td>
+                                <td>5</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc Carmel</td>
+                            <td rowspan="5">Ctra Carmel 9999</td>
+                            <td rowspan="5"><p>Una part del parc duu el nom de jardins de Juan Ponce, en honor al veí Juan Ponce Perujo (1905-1989), que va aconseguir moltes millores per al barri. També hi ha un casal d’avis, una àrea de jocs infantils i pistes de petanca. I al centre del parc hi ha l’obra L’ordre d’avui és el desordre de demà (1999), de l’escultor escocès Ian Hamilton Finlay, feta amb pedra procedent de Montjuïc. </p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc Torrent Maduixer</td>
+                            <td rowspan="5">C Josep Garí 7</td>
+                            <td rowspan="5"><p>El parc del Torrent Maduixer està construït sobre un edifici subterrani de quasi 3.000 metres quadrats que centralitza els serveis de neteja viària del barri de Sant Gervasi. Amb una extensió de gairebé 5.000 metres quadrats, inclou nombroses espècies mediterrànies d’arbres i una zona de joc infantil per als més petits.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Canòdrom Parc de Recerca Creativa</td>
+                            <td rowspan="5">C Concepción Arenal 165</td>
+                            <td rowspan="5"><p>Al vell Canòdrom Meridiana ja no s’hi fan córrer gossos. Ara l’ocupa el flamant Parc de Recerca Creativa, un centre públic al servei de l’emprenedoria i la indústria cultural. Aquí, joves creatius dels àmbits artístic, tecnològic o científic presenten iniciatives que necessiten business angels, és a dir, mecenes que estiguin disposats a finançar-les a canvi d’una part del pastís futur.<p></td>
+                            <td>Cardenal Tedeschini 13</td>
+                            <td>226.344</td>
+                            <td>32</td>
+                            <td>Rambla Fabra i Puig 67</td>
+                            <td>317.139</td>
+                            <td>22</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Rio de Janeiro 3</td>
+                                <td>412.778</td>
+                                <td>29</td>
+                                <td>Alenxadre Gal&iacute; 1</td>
+                                <td>436.886</td>
+                                <td>16</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>A&ccedil;ores 1</td>
+                                <td>467.009</td>
+                                <td>27</td>
+                                <td>Irlanda 11</td>
+                                <td>460.173</td>
+                                <td>14</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Felip II 214</td>
+                                <td>467.902</td>
+                                <td>24</td>
+                                <td>Avda. Meridiana 404</td>
+                                <td>354.936</td>
+                                <td>10</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Avda. Meridiana 404</td>
+                                <td>354.936</td>
+                                <td>20</td>
+                                <td>Felip II 214</td>
+                                <td>467.902</td>
+                                <td>2</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Consorci del Parc Natural de la Serra de Collserola</td>
+                            <td rowspan="5">Camí Pantà 40</td>
+                            <td rowspan="5"><p>Proveïdor de l’aigua potable de l’antiga vila de Sarrià a finals del segle XIX, el pantà de Vallvidrera es va quedar aturat durant molts anys fins que el Patronat de Collserola el va recuperar. Avui dia s’obre a tothom com un lloc d’esbarjo i com un espai natural per a famílies i passejants.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc de Sant Martí</td>
+                            <td rowspan="5">C Menorca 64</td>
+                            <td rowspan="5"><p>Als antics terrenys agrícoles de Sant Martí s’estén aquest parc gegantí de sis hectàrees que inclou nombroses instal·lacions i equipaments municipals: un camp de futbol, una ludoteca, horts urbans, àrees infantils i fins i tot una petita granja amb animals de corral. El parc de Sant Martí integra, també, edificis històrics com ara la masia de Can Cadena o l’església de Sant Martí de Provençals.</p></td>
+                            <td>Cant&agrave;bria 55</td>
+                            <td>262.029</td>
+                            <td>22</td>
+                            <td>Rambla Guip&uacute;scoa 103</td>
+                            <td>295.101</td>
+                            <td>6</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Rambla Guip&uacute;scoa 103</td>
+                                <td>295.101</td>
+                                <td>16</td>
+                                <td>Cant&agrave;bria 55</td>
+                                <td>262.029</td>
+                                <td>4</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">El Parc del Fòrum</td>
+                            <td rowspan="5">Pl Fòrum 1</td>
+                            <td rowspan="5"><p>Memòria del Fòrum Universal de les Cultures celebrat a Barcelona l’any 2004, obert al mar i amb el teló de fons de la nova Diagonal Mar, el parc del Fòrum és un gran recinte que s’ha convertit en lloc de trobada i punt de celebració de múltiples esdeveniments, gràcies a la seva accessibilitat, versatilitat i capacitat per rebre multituds.</p></td>
+                            <td>Rambla de Prim 19</td>
+                            <td>274.33</td>
+                            <td>17</td>
+                            <td>Avda. Diagonal 26</td>
+                            <td>443.569</td>
+                            <td>27</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Avda. d&#039;Eduard Maristany 1</td>
+                                <td>193.527</td>
+                                <td>13</td>
+                                <td>Sant Ramon de Penyafort 1</td>
+                                <td>288.04</td>
+                                <td>23</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>C/Llull 396</td>
+                                <td>452.026</td>
+                                <td>12</td>
+                                <td>Avda. d&#039;Eduard Maristany 1</td>
+                                <td>193.527</td>
+                                <td>18</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Avda. Diagonal 26</td>
+                                <td>443.569</td>
+                                <td>4</td>
+                                <td>C/Llull 396</td>
+                                <td>452.026</td>
+                                <td>11</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Sant Ramon de Penyafort 1</td>
+                                <td>288.04</td>
+                                <td>2</td>
+                                <td>Rambla de Prim 19</td>
+                                <td>274.33</td>
+                                <td>8</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">El Campus de Comunicació</td>
+                            <td rowspan="5">C Roc Boronat 138</td>
+                            <td rowspan="5"><p>A la plaça on antigament s’obria la fàbrica Ca l’Aranyó, i al voltant d’una xemeneia imponent que recorda els orígens industrials del barri, es despleguen els diferents edificis que componen el Campus de Comunicació de la Universitat Pompeu Fabra, dedicat a les ciències de la comunicació i les tecnologies de la informació, i que ha omplert d’estudiants l’antiga zona fabril.</p></td>
+                            <td>Castella 28</td>
+                            <td>404.423</td>
+                            <td>22</td>
+                            <td>Pallars 462</td>
+                            <td>452.88</td>
+                            <td>17</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Sancho de &Aacute;vila 104</td>
+                                <td>362.596</td>
+                                <td>19</td>
+                                <td>Bol&iacute;via 76</td>
+                                <td>187.627</td>
+                                <td>17</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Sancho de &Aacute;vila 170</td>
+                                <td>214.751</td>
+                                <td>19</td>
+                                <td>Ciutat de Granada 168</td>
+                                <td>276.988</td>
+                                <td>14</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Roc Boronat 134</td>
+                                <td>22.727</td>
+                                <td>11</td>
+                                <td>Gran V&iacute;a 902</td>
+                                <td>420.386</td>
+                                <td>14</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Pallars 462</td>
+                                <td>452.88</td>
+                                <td>5</td>
+                                <td>Sancho de &Aacute;vila 104</td>
+                                <td>362.596</td>
+                                <td>13</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc de l'Espanya Industrial</td>
+                            <td rowspan="5">C Muntadas 1</td>
+                            <td rowspan="5"><p>El parc de l’Espanya Industrial, que s’estén pels terrenys que antigament ocupava una fàbrica tèxtil, és un exemple de com, a partir dels anys vuitanta, es van aprofitar els espais de la ciutat per fer equipaments públics de qualitat. Amb un llac ple d’ànecs, grans extensions de gespa i l’escultura d’un drac de 32 metres que serveix com a tobogan per als més petits, el parc atrau diàriament molts barcelonins.</p></td>
+                            <td>Pla&ccedil;a de Joan Peir&oacute;</td>
+                            <td>132.228</td>
+                            <td>26</td>
+                            <td>Consell de Cent 6</td>
+                            <td>332.078</td>
+                            <td>26</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Pl. Sants (Ps. S. Antoni) 0</td>
+                                <td>485.988</td>
+                                <td>19</td>
+                                <td>Vilardell 18</td>
+                                <td>352.94</td>
+                                <td>21</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Tarragona 141</td>
+                                <td>395.732</td>
+                                <td>17</td>
+                                <td>Pl. Sants (Ps. S. Antoni) 0</td>
+                                <td>485.988</td>
+                                <td>6</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Viriat 53</td>
+                                <td>359.262</td>
+                                <td>15</td>
+                                <td>Pla&ccedil;a de Joan Peir&oacute;</td>
+                                <td>132.228</td>
+                                <td>3</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Tarragona 159</td>
+                                <td>336.618</td>
+                                <td>15</td>
+                                <td>Tarragona 141</td>
+                                <td>395.732</td>
+                                <td>1</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc Sanitari Pere Virgili</td>
+                            <td rowspan="5">C Esteve Terradas 30</td>
+                            <td rowspan="5"><p>El parc té com a objectiu la prestació directa de serveis assistencials, d’investigació i de docència. Disposa de 354 llits distribuïts en unitats de convalescència, cures pal•liatives, llarga durada i subaguts. També està dotat d’un hospital de dia, dos equips del Programa d’Atenció Domiciliària i un equip de valoració i orientació de la discapacitat, entre altres serveis. </p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Ca lAranyó</td>
+                            <td rowspan="5">C Roc Boronat 150</td>
+                            <td rowspan="5"><p>Des de finals del segle XIX i durant més de cent anys, Ca l’Aranyó va ser una de les fàbriques més importants del barri del Poblenou. En l’actualitat, i buscant la fusió del passat i del present, aquest edifici carregat d’història forma part d’un campus universitari dedicat a la comunicació, la tecnologia i la innovació, per on transiten cada dia milers d’estudiants.</p></td>
+                            <td>Castella 28</td>
+                            <td>427.609</td>
+                            <td>22</td>
+                            <td>Bol&iacute;via 76</td>
+                            <td>169.593</td>
+                            <td>17</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Sancho de &Aacute;vila 104</td>
+                                <td>407.482</td>
+                                <td>19</td>
+                                <td>Pl. Valent&iacute; Amirall</td>
+                                <td>480.081</td>
+                                <td>15</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Sancho de &Aacute;vila 170</td>
+                                <td>282.232</td>
+                                <td>19</td>
+                                <td>Ciutat de Granada 168</td>
+                                <td>212.185</td>
+                                <td>14</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Roc Boronat 134</td>
+                                <td>98.863</td>
+                                <td>11</td>
+                                <td>Gran V&iacute;a 902</td>
+                                <td>362.001</td>
+                                <td>14</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Pl. Valent&iacute; Amirall</td>
+                                <td>480.081</td>
+                                <td>7</td>
+                                <td>Sancho de &Aacute;vila 104</td>
+                                <td>407.482</td>
+                                <td>13</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Zoo de Barcelona</td>
+                            <td rowspan="5">Parc Ciutadella 0</td>
+                            <td rowspan="5"><p>Situat al parc de la Ciutadella, el Zoo de Barcelona va néixer a partir d’una col·lecció privada d’animals exòtics, la del banquer Lluís Martí, que l’Ajuntament va adquirir per 30.000 pessetes (uns 180 €). Va obrir les portes al públic l’any 1892, i des d’aleshores s'ha anat remodelant i transformant en un espai on apropar-se, gaudir-ne i conèixer millor la fauna d’arreu.</p></td>
+                            <td>Carrer Comer&ccedil; 27</td>
+                            <td>280.679</td>
+                            <td>28</td>
+                            <td>Comer&ccedil; 36</td>
+                            <td>445.097</td>
+                            <td>21</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Salvat Papasseit 72</td>
+                                <td>443.845</td>
+                                <td>20</td>
+                                <td>Avinguda del Marques Argentera 19</td>
+                                <td>226.741</td>
+                                <td>13</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Recinte Parc de la Ciutadella</td>
+                                <td>143.456</td>
+                                <td>16</td>
+                                <td>Marqu&eacute;s d&#039;Argentera 3</td>
+                                <td>358.087</td>
+                                <td>12</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Pg Llu&iacute;s Companys 1</td>
+                                <td>446.23</td>
+                                <td>15</td>
+                                <td>Pg Llu&iacute;s Companys 1</td>
+                                <td>446.23</td>
+                                <td>10</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Pg Llu&iacute;s Companys 2</td>
+                                <td>445.95</td>
+                                <td>15</td>
+                                <td>Pg Llu&iacute;s Companys 2</td>
+                                <td>445.95</td>
+                                <td>7</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc de Can Sabaté</td>
+                            <td rowspan="5">C Mineria 16</td>
+                            <td rowspan="5"><p>De forma rectangular i allargada, el parc de Can Sabaté és un jardí d’aspecte clàssic que destaca per la tranquil·litat que inspira i l’elegància dels seus elements. N’és protagonista la piràmide de marbre verd situada enmig d’un estany, i també una bassa poc profunda on els petits es banyen a l’estiu.</p></td>
+                            <td>Pl. Teresa de Claramunt</td>
+                            <td>219.583</td>
+                            <td>30</td>
+                            <td>Jane Addams 26</td>
+                            <td>301.081</td>
+                            <td>28</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Radi 10</td>
+                                <td>318.936</td>
+                                <td>30</td>
+                                <td>Carrer de la Foneria 33</td>
+                                <td>426.22</td>
+                                <td>24</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Juan Gris 28</td>
+                                <td>404.238</td>
+                                <td>25</td>
+                                <td>Gran Via 181</td>
+                                <td>403.237</td>
+                                <td>12</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Gran Via 180</td>
+                                <td>386.693</td>
+                                <td>20</td>
+                                <td>Pg. Zona Franca 244</td>
+                                <td>122.175</td>
+                                <td>10</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Quetzal 22</td>
+                                <td>464.966</td>
+                                <td>20</td>
+                                <td>Gran Via 180</td>
+                                <td>386.693</td>
+                                <td>6</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc del Laberint d'Horta</td>
+                            <td rowspan="5">Pg Castanyers 1</td>
+                            <td rowspan="5"><p>Espai per perdre’s i trobar-se, el Laberint d’Horta és un llegat natural i artístic únic a Barcelona que els habitants del districte d’Horta-Guinardó conserven amb molt d’orgull. El parc del Laberint d’Horta guarda molts racons per descobrir en el seu extens espai natural, i el seu famós laberint n’és l’element més destacat.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc Turó del Putget</td>
+                            <td rowspan="5">C Manacor 9</td>
+                            <td rowspan="5"><p>Els jardins del parc del Putxet, a dalt del turó, són molt freqüentats pels veïns: a banda de ser un bon lloc per passejar i descansar, permeten creuar el barri d’un costat a l’altre evitant el trànsit de vehicles i gaudint de l’espectacular vegetació que els pobla. </p></td>
+                            <td>Castanyer 16</td>
+                            <td>405.05</td>
+                            <td>31</td>
+                            <td>Carrer de P&aacute;dua 98</td>
+                            <td>419.93</td>
+                            <td>13</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Carrer de P&aacute;dua 98</td>
+                                <td>419.93</td>
+                                <td>14</td>
+                                <td>Castanyer 16</td>
+                                <td>405.05</td>
+                                <td>2</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc del Clot</td>
+                            <td rowspan="5">Escultors Claperós 55</td>
+                            <td rowspan="5"><p>Amb una superfície de 3,5 hectàrees, el parc del Clot és una de les grans zones verdes del districte. Es va crear durant la dècada dels vuitanta i conserva algunes estructures dels antics tallers mecànics que hi havia hagut anteriorment: en són un exemple les arcades de pedra d’una vella façana, que ara funcionen com un original aqüeducte que acaba amb un salt d’aigua.</p></td>
+                            <td>C/Val&egrave;ncia 621</td>
+                            <td>343.949</td>
+                            <td>23</td>
+                            <td>Pl. Valent&iacute; Amirall</td>
+                            <td>181.415</td>
+                            <td>15</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Arag&oacute; 629</td>
+                                <td>216.437</td>
+                                <td>20</td>
+                                <td>Gran Via  940</td>
+                                <td>413.565</td>
+                                <td>15</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Arag&oacute; 661</td>
+                                <td>447.659</td>
+                                <td>20</td>
+                                <td>Ciutat de Granada 168</td>
+                                <td>448.355</td>
+                                <td>14</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Gran Via  940</td>
+                                <td>413.565</td>
+                                <td>12</td>
+                                <td>Gran V&iacute;a 902</td>
+                                <td>261.637</td>
+                                <td>14</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Av Meridiana 80</td>
+                                <td>413.661</td>
+                                <td>7</td>
+                                <td>Av Meridiana 80</td>
+                                <td>413.661</td>
+                                <td>11</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc d'Atraccions del Tibidabo</td>
+                            <td rowspan="5">Pl Tibidabo 3</td>
+                            <td rowspan="5"><p>Des que va obrir les portes a principis del segle XX, el Parc d’Atraccions del Tibidabo forma part de la memòria de la ciutat. El parc fa somiar petits i grans amb miralls, autòmats, el tren de la bruixa o la Talaia, i avui, com fa més de cent anys, el Tibidabo continua sent la muntanya màgica. Pujar al Tibidabo ha estat sempre motiu de festa.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc del Turó de la Peira</td>
+                            <td rowspan="5">Pg Fabra i Puig 396</td>
+                            <td rowspan="5"><p>Abraçat pels edificis de Nou Barris, el parc del Turó de la Peira és una porta oberta a zones enjardinades, boscos de pins i espais de repòs. Un món de tranquil·litat i natura que s’enfila fins al cim del turó, des d’on es contempla una vista privilegiada de la ciutat des de la serra de Collserola fins al mar.</p></td>
+                            <td>Petrarca 44</td>
+                            <td>465.826</td>
+                            <td>26</td>
+                            <td>Carrer Fulton 1</td>
+                            <td>494.877</td>
+                            <td>0</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Sant Iscle 60</td>
+                                <td>484.13</td>
+                                <td>25</td>
+                                <td>Petrarca 44</td>
+                                <td>465.826</td>
+                                <td>0</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Carrer Fulton 1</td>
+                                <td>494.877</td>
+                                <td>21</td>
+                                <td>Sant Iscle 60</td>
+                                <td>484.13</td>
+                                <td>0</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Turó Park - Parc del Poeta Eduard Marquina</td>
+                            <td rowspan="5">Av Pau Casals 19</td>
+                            <td rowspan="5"><p>Amb petites zones boscoses, parterres florits, un estany, places de regust romàntic i nombrosos arbres, el Turó Park és un refugi bucòlic on es pot gaudir de la natura en plena ciutat. Obert a l’avinguda de Pau Casals, està dedicat al poeta Eduard Marquina i mostra diverses peces d’art que conviden a deixar volar somnis i fantasies.</p></td>
+                            <td>Amig&oacute; 23</td>
+                            <td>281.557</td>
+                            <td>25</td>
+                            <td>Avda. Diagonal 630</td>
+                            <td>372.622</td>
+                            <td>16</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Madrazo 131</td>
+                                <td>375.385</td>
+                                <td>24</td>
+                                <td>Av. Diagonal 602</td>
+                                <td>212.979</td>
+                                <td>15</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Carrer de Francesc P&eacute;rez Cabrero 6</td>
+                                <td>276.639</td>
+                                <td>22</td>
+                                <td>Pau Casals 1</td>
+                                <td>181.559</td>
+                                <td>7</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Av. Diagonal 612</td>
+                                <td>211.382</td>
+                                <td>19</td>
+                                <td>Amig&oacute; 23</td>
+                                <td>281.557</td>
+                                <td>4</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Pau Casals 1</td>
+                                <td>181.559</td>
+                                <td>19</td>
+                                <td>Av. Diagonal 612</td>
+                                <td>211.382</td>
+                                <td>3</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Fundació Parc Científic de Barcelona</td>
+                            <td rowspan="5">C Baldiri Reixac 2</td>
+                            <td rowspan="5"><p>Al capdavant de la investigació científica en l’àmbit internacional, el Parc Científic de Barcelona, impulsat per la UB, és un espai innovador especialitzat en enginyeria industrial situat a l’avinguda Diagonal, molt a prop del Campus Sud de la Universitat Politècnica de Catalunya. Aquest entorn té l’objectiu de convertir-se en el centre científic i tecnològic més gran del sud d’Europa.</p></td>
+                            <td>Josep Samitier</td>
+                            <td>132.428</td>
+                            <td>1</td>
+                            <td>Josep Samitier</td>
+                            <td>132.428</td>
+                            <td>24</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Torre Glòries</td>
+                            <td rowspan="5">Av Diagonal 209</td>
+                            <td rowspan="5"><p>El monòlit cilíndric i brillant que reflecteix els colors de Barcelona s’ha guanyat un espai a la silueta de la ciutat. La Torre Agbar forma part del nostre paisatge quotidià, com la Sagrada Família o les muntanyes de Montserrat. Un homenatge del arquitecte Jean Nouvel a l’arquitectura d’Antoni Gaudí que s’ha convertit en un símbol de la Barcelona contemporània.</p></td>
+                            <td>Sancho de &Aacute;vila 104</td>
+                            <td>397.889</td>
+                            <td>19</td>
+                            <td>Bol&iacute;via 76</td>
+                            <td>141.246</td>
+                            <td>17</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Roc Boronat 134</td>
+                                <td>325.719</td>
+                                <td>11</td>
+                                <td>Av Meridiana 66</td>
+                                <td>263.746</td>
+                                <td>15</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Av Meridiana 80</td>
+                                <td>312.341</td>
+                                <td>7</td>
+                                <td>Ciutat de Granada 168</td>
+                                <td>118.468</td>
+                                <td>14</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Ciutat de Granada 168</td>
+                                <td>118.468</td>
+                                <td>3</td>
+                                <td>Sancho de &Aacute;vila 104</td>
+                                <td>397.889</td>
+                                <td>13</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Bol&iacute;via 76</td>
+                                <td>141.246</td>
+                                <td>3</td>
+                                <td>Roc Boronat 134</td>
+                                <td>325.719</td>
+                                <td>13</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Fundació Privada Vila Casas</td>
+                            <td rowspan="5">C Roc Boronat 116</td>
+                            <td rowspan="5"><p>Una de les antigues fàbriques rehabilitades del districte de Sant Martí, a l’hiperactiu i tecnològic districte del 22@, és avui dia un oasi de pau enjardinat que exhibeix obres d’art contemporani. És el Museu Can Framis, un dels més desconeguts de la ciutat.</p></td>
+                            <td>Castella 28</td>
+                            <td>375.632</td>
+                            <td>22</td>
+                            <td>Pallars 462</td>
+                            <td>313.444</td>
+                            <td>17</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Sancho de &Aacute;vila 104</td>
+                                <td>336.232</td>
+                                <td>19</td>
+                                <td>Bol&iacute;via 76</td>
+                                <td>294.31</td>
+                                <td>17</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Sancho de &Aacute;vila 170</td>
+                                <td>100.11</td>
+                                <td>19</td>
+                                <td>Ciutat de Granada 168</td>
+                                <td>416.205</td>
+                                <td>14</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Pujades 121</td>
+                                <td>456.477</td>
+                                <td>14</td>
+                                <td>Sancho de &Aacute;vila 104</td>
+                                <td>336.232</td>
+                                <td>13</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Roc Boronat 134</td>
+                                <td>122.862</td>
+                                <td>11</td>
+                                <td>Roc Boronat 134</td>
+                                <td>122.862</td>
+                                <td>13</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc de les Cascades</td>
+                            <td rowspan="5">Av Litoral 12</td>
+                            <td rowspan="5"><p>Una cascada que neix en un petit estany dóna nom a aquest parc verd que connecta la Vila Olímpica amb les platges de Barcelona. Cobert de gespa interrompuda per camins fets de rajola vermella, aquest gran espai verd conté tota mena de vegetació típicament mediterrània.</p></td>
+                            <td>Salvat Papasseit 72</td>
+                            <td>426.33</td>
+                            <td>20</td>
+                            <td>Joan Mir&oacute; 2</td>
+                            <td>318.28</td>
+                            <td>30</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Villena, 11 11</td>
+                                <td>288.435</td>
+                                <td>13</td>
+                                <td>Avinguda Litoral 16</td>
+                                <td>95.455</td>
+                                <td>28</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Ramon Trias Fargas</td>
+                                <td>339.121</td>
+                                <td>5</td>
+                                <td>Av. Del Litoral 24</td>
+                                <td>461.898</td>
+                                <td>26</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Avda. Litoral</td>
+                                <td>88.625</td>
+                                <td>3</td>
+                                <td>Avda. Litoral</td>
+                                <td>88.625</td>
+                                <td>25</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Ramon trias Fargas 19</td>
+                                <td>230.148</td>
+                                <td>2</td>
+                                <td>Pg Mar&iacute;tim Barceloneta 23</td>
+                                <td>254.739</td>
+                                <td>24</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc de la Trinitat</td>
+                            <td rowspan="5">Pg Santa Coloma 60</td>
+                            <td rowspan="5"><p>El parc de la Trinitat és un oasi al cor de Sant Andreu: un espai verd fet de prats de gespa i fileres de pollancres que cobreixen un turó emmarquen un llarg canal on, en un dels extrems, descansa l’escultura d’una noia ajupida que esbandeix roba. </p></td>
+                            <td>Pl. de la Trinitat, 5-7 / amb Mare de D&eacute;u de Lorda 5</td>
+                            <td>394.749</td>
+                            <td>23</td>
+                            <td>Fernando Pessoa 72</td>
+                            <td>454.647</td>
+                            <td>14</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Via Barcino 121</td>
+                                <td>264.861</td>
+                                <td>16</td>
+                                <td>Via Barcino 71</td>
+                                <td>307.697</td>
+                                <td>13</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Fernando Pessoa 72</td>
+                                <td>454.647</td>
+                                <td>12</td>
+                                <td>Via Barcino 121</td>
+                                <td>264.861</td>
+                                <td>11</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Via Barcino 71</td>
+                                <td>307.697</td>
+                                <td>6</td>
+                                <td>Pl. de la Trinitat, 5-7 / amb Mare de D&eacute;u de Lorda 5</td>
+                                <td>394.749</td>
+                                <td>0</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">La plaça de les Glòries Catalanes</td>
+                            <td rowspan="5">Pl Glòries Catalanes 36</td>
+                            <td rowspan="5"><p>La plaça de les Glòries Catalanes és un dels nexes més importants de la Barcelona metropolitana, el lloc on conflueixen tres de les vies principals de la ciutat. En constant remodelació des que Ildefons Cerdà la va crear al principi del segle XX, el seu perfil està marcat pel dels edificis moderns que l’envolten.</p></td>
+                            <td>Consell de Cent 566</td>
+                            <td>383.978</td>
+                            <td>27</td>
+                            <td>Bol&iacute;via 76</td>
+                            <td>348.375</td>
+                            <td>17</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Sancho de &Aacute;vila 60</td>
+                                <td>481.674</td>
+                                <td>22</td>
+                                <td>Av Meridiana 66</td>
+                                <td>46.371</td>
+                                <td>15</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Sancho de &Aacute;vila 104</td>
+                                <td>490.088</td>
+                                <td>19</td>
+                                <td>Ciutat de Granada 168</td>
+                                <td>328.663</td>
+                                <td>14</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Av. Meridiana 47</td>
+                                <td>483.322</td>
+                                <td>16</td>
+                                <td>Sancho de &Aacute;vila 104</td>
+                                <td>490.088</td>
+                                <td>13</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Av. Meridiana 47</td>
+                                <td>479.699</td>
+                                <td>13</td>
+                                <td>Padilla 159</td>
+                                <td>369.446</td>
+                                <td>13</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">El Parc del Fòrum</td>
+                            <td rowspan="5">Pl Fòrum 1</td>
+                            <td rowspan="5"><p>A tocar de la placa fotovoltaica i amb el teló de fons del recinte firal, la zona de banys del Fòrum ofereix als banyistes un espai diferent per gaudir del mar. Sense sorra i amb un solàrium pavimentat on relaxar-se, és un lloc ideal per nedar o prendre el sol lluny de les platges de més afluència.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc de la Ciutadella</td>
+                            <td rowspan="5">Pg Picasso 21</td>
+                            <td rowspan="5"><p>La Ciutadella de Barcelona va ser una fortalesa militar que es va aixecar entre els anys 1716 i 1725, després de la victòria borbònica sobre els catalans en la guerra de Successió, amb l’objectiu de controlar i reprimir la població barcelonina. Després de nombroses peticions, el 1869 se'n va començar l'enderrocament, i el solar es va destinar a una gran zona verda: naixia el parc de la Ciutadella.</p></td>
+                            <td>Carrer Comer&ccedil; 27</td>
+                            <td>186.038</td>
+                            <td>28</td>
+                            <td>Comer&ccedil; 36</td>
+                            <td>366.397</td>
+                            <td>21</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Recinte Parc de la Ciutadella</td>
+                                <td>209.007</td>
+                                <td>16</td>
+                                <td>Avinguda del Marques Argentera 19</td>
+                                <td>140.788</td>
+                                <td>13</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Pg Llu&iacute;s Companys 1</td>
+                                <td>410.219</td>
+                                <td>15</td>
+                                <td>Marqu&eacute;s d&#039;Argentera 3</td>
+                                <td>276.796</td>
+                                <td>12</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Pg Llu&iacute;s Companys 2</td>
+                                <td>417.674</td>
+                                <td>15</td>
+                                <td>Pg Llu&iacute;s Companys 1</td>
+                                <td>410.219</td>
+                                <td>10</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Marqu&egrave;s de l&#039;Argentera 17</td>
+                                <td>113.715</td>
+                                <td>12</td>
+                                <td>Pg Llu&iacute;s Companys 2</td>
+                                <td>417.674</td>
+                                <td>7</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Centre Comercial Glòries</td>
+                            <td rowspan="5">Av Diagonal 208</td>
+                            <td rowspan="5"><p>El Centre Comercial Barcelona Glòries es va crear arran de la reforma urbanística de Barcelona 92. Quan es va inaugurar, l’any 1995, va causar sorpresa a tothom pel seu peculiar disseny semiobert que oferia moltes possibilitats a l’espai. Amb quasi dos-cents comerços repartits en tres nivells, és un dels llocs més complets de la ciutat per anar a comprar.</p></td>
+                            <td>Castella 28</td>
+                            <td>434.902</td>
+                            <td>22</td>
+                            <td>Bol&iacute;via 76</td>
+                            <td>223.609</td>
+                            <td>17</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Sancho de &Aacute;vila 104</td>
+                                <td>493.928</td>
+                                <td>19</td>
+                                <td>Pl. Valent&iacute; Amirall</td>
+                                <td>389.493</td>
+                                <td>15</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Sancho de &Aacute;vila 170</td>
+                                <td>351.424</td>
+                                <td>19</td>
+                                <td>Gran Via  940</td>
+                                <td>495.1</td>
+                                <td>15</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Gran Via  940</td>
+                                <td>495.1</td>
+                                <td>12</td>
+                                <td>Ciutat de Granada 168</td>
+                                <td>186.643</td>
+                                <td>14</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Roc Boronat 134</td>
+                                <td>189.034</td>
+                                <td>11</td>
+                                <td>Gran V&iacute;a 902</td>
+                                <td>275.465</td>
+                                <td>14</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc de Diagonal Mar</td>
+                            <td rowspan="5">C Llull 362</td>
+                            <td rowspan="5"><p>Ramificant-se en estanys com si es tractés d’uns aiguamolls contemporanis, el parc de Diagonal Mar és un espai on el blau de l’aigua comparteix protagonisme amb el verd de la vegetació exuberant. Dissenyat pel tàndem d’arquitectes Miralles i Tagliabue, és el segon parc més gran de Barcelona i una de les obres contemporànies que van marcar la recuperació de la zona del Fòrum.</p></td>
+                            <td>Diagonal 82</td>
+                            <td>470.53</td>
+                            <td>12</td>
+                            <td>Avda. Diagonal 26</td>
+                            <td>435.6</td>
+                            <td>27</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Passeig de Taulat 238</td>
+                                <td>253.997</td>
+                                <td>7</td>
+                                <td>Llull / Proven&ccedil;als 309</td>
+                                <td>370.007</td>
+                                <td>21</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Passeig de Garcia F&agrave;ria 85</td>
+                                <td>304.834</td>
+                                <td>7</td>
+                                <td>Passeig de Taulat 238</td>
+                                <td>253.997</td>
+                                <td>19</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Avda. Diagonal 26</td>
+                                <td>435.6</td>
+                                <td>4</td>
+                                <td>Passeig de Garcia F&agrave;ria 85</td>
+                                <td>304.834</td>
+                                <td>17</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Llull / Proven&ccedil;als 309</td>
+                                <td>370.007</td>
+                                <td>1</td>
+                                <td>Diagonal 82</td>
+                                <td>470.53</td>
+                                <td>13</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Disseny Hub Barcelona</td>
+                            <td rowspan="5">Pl Glòries Catalanes 37</td>
+                            <td rowspan="5"><p>Barcelona sempre s’ha associat al disseny, i per això es mereix un museu que reculli tot el patrimoni. El millor lloc, l’impressionant edifici del Disseny Hub Barcelona, bastit amb vidre i metall i ubicat al districte de la Barcelona del futur i de la innovació, Sant Martí.</p></td>
+                            <td>Consell de Cent 566</td>
+                            <td>437.84</td>
+                            <td>27</td>
+                            <td>Bol&iacute;via 76</td>
+                            <td>289.361</td>
+                            <td>17</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Sancho de &Aacute;vila 60</td>
+                                <td>454.732</td>
+                                <td>22</td>
+                                <td>Av Meridiana 66</td>
+                                <td>87.266</td>
+                                <td>15</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Sancho de &Aacute;vila 104</td>
+                                <td>438.605</td>
+                                <td>19</td>
+                                <td>Ciutat de Granada 168</td>
+                                <td>283.79</td>
+                                <td>14</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Av. Meridiana 47</td>
+                                <td>494.249</td>
+                                <td>16</td>
+                                <td>Sancho de &Aacute;vila 104</td>
+                                <td>438.605</td>
+                                <td>13</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Av. Meridiana 47</td>
+                                <td>490.729</td>
+                                <td>13</td>
+                                <td>Roc Boronat 134</td>
+                                <td>484.11</td>
+                                <td>13</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">IL3 Institut de Formació Contínua - Universitat de Barcelona</td>
+                            <td rowspan="5">C Ciutat de Granada 131</td>
+                            <td rowspan="5"><p>Nascut l’any 2006 fruit de la integració de la Fundació Bosch i Gimpera i la Universitat de Barcelona virtual, l’Institut de Formació Contínua ofereix estudis de postgrau presencials i virtuals per ajudar empreses i professionals a ser més eficients. El centre ofereix sistemes d’aprenentatge innovadors basats en les últimes tecnologies.  </p></td>
+                            <td>Sancho de &Aacute;vila 60</td>
+                            <td>460.233</td>
+                            <td>22</td>
+                            <td>Pallars 462</td>
+                            <td>482.234</td>
+                            <td>17</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Sancho de &Aacute;vila 104</td>
+                                <td>251.854</td>
+                                <td>19</td>
+                                <td>Bol&iacute;via 76</td>
+                                <td>70.58</td>
+                                <td>17</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Sancho de &Aacute;vila 170</td>
+                                <td>332.355</td>
+                                <td>19</td>
+                                <td>Av Meridiana 66</td>
+                                <td>421.682</td>
+                                <td>15</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Roc Boronat 134</td>
+                                <td>155.416</td>
+                                <td>11</td>
+                                <td>Ciutat de Granada 168</td>
+                                <td>236.135</td>
+                                <td>14</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Pallars 462</td>
+                                <td>482.234</td>
+                                <td>5</td>
+                                <td>Sancho de &Aacute;vila 104</td>
+                                <td>251.854</td>
+                                <td>13</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc de la Guineueta</td>
+                            <td rowspan="5">Pl de la República 9</td>
+                            <td rowspan="5"><p>El de la Guineueta és un parc familiar i apartat de la zona cèntrica de la ciutat. Situat entre els barris de la Guineueta i de Verdum, ha esdevingut punt de trobada de veïns de totes les edats i escenari d’aplecs sardanistes i de celebracions andaluses. Passejar-hi és trobar una Barcelona obrera i hereva dels immigrants que van arribar a Nou Barris procedents del sud d’Espanya.</p></td>
+                            <td>Marie Curie 8</td>
+                            <td>458.01</td>
+                            <td>27</td>
+                            <td>Pla&ccedil;a dels Jardins d&#039;Alf&agrave;bia 1</td>
+                            <td>217.064</td>
+                            <td>9</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Seu del Districte (Nou Barris)</td>
+                                <td>432.002</td>
+                                <td>26</td>
+                                <td>Carrer Tur&oacute; Blau 1</td>
+                                <td>196.709</td>
+                                <td>1</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Carrer Tur&oacute; Blau 1</td>
+                                <td>196.709</td>
+                                <td>21</td>
+                                <td>Seu del Districte (Nou Barris)</td>
+                                <td>432.002</td>
+                                <td>0</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Pla&ccedil;a dels Jardins d&#039;Alf&agrave;bia 1</td>
+                                <td>217.064</td>
+                                <td>16</td>
+                                <td>Marie Curie 8</td>
+                                <td>458.01</td>
+                                <td>0</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc del Mirador del Poble-sec</td>
+                            <td rowspan="5">Pg Montjuïc 59</td>
+                            <td rowspan="5"><p>El Mirador del Poble-sec mira cap al barri del mateix nom. Està flanquejat pel parc de la Primavera i els jardins de Mossèn Costa i Llobera, i a prop dels jardins de Miramar, dissenyats per Jean-Claude Nicolas Forestier. El parc que envolta el mirador és forestal, ja que en gran part es tracta del bosc propi de la muntanya, i es va fer entre el 1995 i el 1997 amb un projecte de Patrizia Falcone.</p></td>
+                            <td>Nou de la Rambla 164</td>
+                            <td>274.934</td>
+                            <td>23</td>
+                            <td>Carrer de Sant Pau 119</td>
+                            <td>423.354</td>
+                            <td>10</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Vil&agrave; i Vil&agrave; 45</td>
+                                <td>193.119</td>
+                                <td>19</td>
+                                <td>Av. Paral.lel 54</td>
+                                <td>346.163</td>
+                                <td>5</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Av. Paral.lel 54</td>
+                                <td>346.163</td>
+                                <td>16</td>
+                                <td>Vil&agrave; i Vil&agrave; 45</td>
+                                <td>193.119</td>
+                                <td>3</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Carrer de Sant Pau 119</td>
+                                <td>423.354</td>
+                                <td>1</td>
+                                <td>Nou de la Rambla 164</td>
+                                <td>274.934</td>
+                                <td>2</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc del Centre del Poblenou</td>
+                            <td rowspan="5">Av Diagonal 130</td>
+                            <td rowspan="5"><p>La combinació d’una gran diversitat d’ambients fa del parc del Centre del Poblenou l’opció perfecta per escapar-se a la natura alhora que es gaudeix de l’encant de l’antic barri industrial transformat en el nou districte del disseny. Aquesta joia arquitectònica naturalista porta l’empremta de l’arquitecte Jean Nouvel, autor també de la propera Torre Agbar.</p></td>
+                            <td>Castella 28</td>
+                            <td>216.202</td>
+                            <td>22</td>
+                            <td>Espronceda 124</td>
+                            <td>282.202</td>
+                            <td>17</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Sancho de &Aacute;vila 170</td>
+                                <td>496.517</td>
+                                <td>19</td>
+                                <td>Lope de Vega 79</td>
+                                <td>485.885</td>
+                                <td>17</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Gran Via  940</td>
+                                <td>475.766</td>
+                                <td>12</td>
+                                <td>Gran Via  940</td>
+                                <td>475.766</td>
+                                <td>15</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Pere IV 301</td>
+                                <td>430.584</td>
+                                <td>11</td>
+                                <td>Pere IV 301</td>
+                                <td>430.584</td>
+                                <td>14</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Espronceda 124</td>
+                                <td>282.202</td>
+                                <td>9</td>
+                                <td>Sancho de &Aacute;vila 170</td>
+                                <td>496.517</td>
+                                <td>5</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc de Can Dragó</td>
+                            <td rowspan="5">C Rosselló i Porcel 7</td>
+                            <td rowspan="5"><p>El parc de Can Dragó és, més que un parc, un enorme bulevard que acull zones verdes, espais de joc, instal·lacions esportives, piscines i zones de passeig. A mig camí entre l’avinguda Meridiana i Sant Andreu, i al llarg de 12 hectàrees, Can Dragó és el pulmó verd del barri de Porta i un dels parcs més importants del districte de Nou Barris.</p></td>
+                            <td>Carrer de Rossell&oacute; i Porcel 1</td>
+                            <td>61.774</td>
+                            <td>21</td>
+                            <td>Malats 98</td>
+                            <td>243.921</td>
+                            <td>19</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Carrer de Bartrina 14</td>
+                                <td>360.813</td>
+                                <td>19</td>
+                                <td>Andreu Nin 22</td>
+                                <td>243.994</td>
+                                <td>14</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Andreu Nin 22</td>
+                                <td>243.994</td>
+                                <td>19</td>
+                                <td>Concepci&oacute; Arenal 281</td>
+                                <td>455.871</td>
+                                <td>11</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Concepci&oacute; Arenal 281</td>
+                                <td>455.871</td>
+                                <td>11</td>
+                                <td>Carrer de Rossell&oacute; i Porcel 1</td>
+                                <td>61.774</td>
+                                <td>11</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Malats 98</td>
+                                <td>243.921</td>
+                                <td>5</td>
+                                <td>Carrer de Bartrina 14</td>
+                                <td>360.813</td>
+                                <td>7</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc de Joan Miró</td>
+                            <td rowspan="5">C Aragó 2</td>
+                            <td rowspan="5"><p>Situat a l’esquerra de l’Eixample, molt a prop de la plaça d'Espanya, el parc de Joan Miró, dedicat a l’artista, és un espai ampli i arbrat obert a tots els veïns i visitants que vulguin descansar una mica enmig de la ciutat. Ocupa quatre illes a l’esquerra de l’Eixample, i amb una biblioteca a l’interior i una gran zona verda representa el cor de la cultura i l’esbarjo del barri.</p></td>
+                            <td>Tarragona 103</td>
+                            <td>266.82</td>
+                            <td>28</td>
+                            <td>Consell de Cent 6</td>
+                            <td>463.641</td>
+                            <td>26</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Rocafort 103</td>
+                                <td>446.643</td>
+                                <td>27</td>
+                                <td>Mallorca 41</td>
+                                <td>493.67</td>
+                                <td>12</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Gran Via 375</td>
+                                <td>425.998</td>
+                                <td>21</td>
+                                <td>Rocafort 167</td>
+                                <td>443.31</td>
+                                <td>12</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Gran Via 375</td>
+                                <td>414.422</td>
+                                <td>20</td>
+                                <td>Vilamar&iacute; 85</td>
+                                <td>215.842</td>
+                                <td>3</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Tarragona 141</td>
+                                <td>177.831</td>
+                                <td>17</td>
+                                <td>Tarragona 141</td>
+                                <td>177.831</td>
+                                <td>1</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc del Guinardó</td>
+                            <td rowspan="5">Garriga i Roca 1</td>
+                            <td rowspan="5"><p>Al barri del Guinardó, a la coneguda plaça del Nen de la Rutlla, s’obre el parc del Guinardó, un univers natural que permet passar en pocs minuts del context urbà a un bosc frondós. Els jardins històrics, travessats per un torrent canalitzat amb estanys i salts d’aigua, s’organitzen en terrasses que conviden a passejar i gaudir de la vegetació forestal.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc de la Creueta del Coll</td>
+                            <td rowspan="5">Pg Mare de Déu del Coll 77</td>
+                            <td rowspan="5"><p>Resguardat de mirades i mig amagat en un dels barris del districte de Gràcia, hi ha un frondós parc de muntanya amb un gran estany que ajuda a passar els rigors de l’estiu. Una piscina, al mig d’un entorn verd esquitxat d’art, que s’ha convertit en un dels llocs més agradables per a l’oci urbà.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc del Castell de l'Oreneta</td>
+                            <td rowspan="5">C Montevideo 45</td>
+                            <td rowspan="5"><p>La unió de dues grans finques senyorials va donar lloc a una gran zona verda de més de 17 hectàrees a la ciutat: el parc del Castell de l’Oreneta. Va obrir-se al públic l’any 1978 i des de llavors s’ha convertit en un espai natural emblemàtic, amb zones de descans i lleure, àrees infantils i atraccions com ara el tren en miniatura i el passeig amb poni per als més menuts.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc de La Maquinista de Sant Andreu</td>
+                            <td rowspan="5">Parc La Maquinista S Andreu 9999</td>
+                            <td rowspan="5"><p>Una antiga roda de tren, col·locada al revés, recorda el lloc on hi havia La Maquinista Terrestre i Marítima, dedicada a la fabricació de transport terrestre i marítim. Fundada l’any 1855 a la Barceloneta, es va traslladar a Sant Andreu entre el 1917 i el 1922. A finals dels vuitanta, la va absorbir l’empresa Gec-Alsthom, ara Alstom, i es va traslladar a Santa Perpètua de Mogoda. </p></td>
+                            <td>Malats 28</td>
+                            <td>455.779</td>
+                            <td>24</td>
+                            <td>Campana de la Maquinista</td>
+                            <td>460.044</td>
+                            <td>22</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>C/Joan Torras 28</td>
+                                <td>312.292</td>
+                                <td>24</td>
+                                <td>Rep&uacute;blica Dominicana 25</td>
+                                <td>401.99</td>
+                                <td>10</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Pla&ccedil;a de l&#039;Estaci&oacute; 6</td>
+                                <td>173.273</td>
+                                <td>22</td>
+                                <td>Pla&ccedil;a de l&#039;Estaci&oacute; 6</td>
+                                <td>173.273</td>
+                                <td>4</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Rep&uacute;blica Dominicana 25</td>
+                                <td>401.99</td>
+                                <td>22</td>
+                                <td>C/Joan Torras 28</td>
+                                <td>312.292</td>
+                                <td>2</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Campana de la Maquinista</td>
+                                <td>460.044</td>
+                                <td>4</td>
+                                <td>Malats 28</td>
+                                <td>455.779</td>
+                                <td>0</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc de Montjuïc</td>
+                            <td rowspan="5">Pg Migdia 147</td>
+                            <td rowspan="5"><p>Montjuïc és un dels pulmons verds de la ciutat de Barcelona i un dels seus millors miradors. El petit món que reuneix història, jardins, museus, equipaments culturals i instal·lacions olímpiques el converteixen en un lloc únic. L’imponent turó que ocupa des del barri de Sants mira cap al port i ofereix un paisatge impressionant de la ciutat.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc de la Font Florida</td>
+                            <td rowspan="5">G.V. Corts Catalanes 196</td>
+                            <td rowspan="5"><p>En forma de c, a aquest parc s’hi pot accedir des de dos punts diferents del carrer de la Mineria. El centre l’ocupa una esplanada pavimentada envoltada d’arbres on hi ha bancs per seure i una àrea de jocs infantils. </p></td>
+                            <td>Gran Via 180</td>
+                            <td>191.624</td>
+                            <td>20</td>
+                            <td>Gran Via 273</td>
+                            <td>396.397</td>
+                            <td>25</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Gran Via 181</td>
+                                <td>173.899</td>
+                                <td>14</td>
+                                <td>Gav&agrave; 1</td>
+                                <td>421.228</td>
+                                <td>19</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Gav&agrave; 1</td>
+                                <td>421.228</td>
+                                <td>4</td>
+                                <td>Gran Via 181</td>
+                                <td>173.899</td>
+                                <td>12</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Gav&agrave; 81</td>
+                                <td>267.507</td>
+                                <td>2</td>
+                                <td>Gav&agrave; 81</td>
+                                <td>267.507</td>
+                                <td>10</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Gran Via 273</td>
+                                <td>396.397</td>
+                                <td>0</td>
+                                <td>Gran Via 180</td>
+                                <td>191.624</td>
+                                <td>6</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc de la Pegaso</td>
+                            <td rowspan="5">C Sagrera 179</td>
+                            <td rowspan="5"><p>La gran zona verda del barri de la Sagrera és el parc de la Pegaso, un terreny dedicat antigament a l’ús fabril i reconvertit, gràcies a l’acció veïnal, en uns jardins de vegetació exuberant. Amb zones d’arbrat, àrees de joc i un canal que serpenteja pel seu cor, el parc de la Pegaso és avui dia una illa de pau i desconnexió dins de la ciutat.</p></td>
+                            <td>Cardenal Tedeschini 13</td>
+                            <td>485.825</td>
+                            <td>32</td>
+                            <td>Cardenal Tedeschini 13</td>
+                            <td>485.825</td>
+                            <td>1</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Gran de Sant Andreu 93</td>
+                                <td>399.123</td>
+                                <td>32</td>
+                                <td>Sagrera 74</td>
+                                <td>444.821</td>
+                                <td>1</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>A&ccedil;ores 1</td>
+                                <td>232.327</td>
+                                <td>27</td>
+                                <td>A&ccedil;ores 1</td>
+                                <td>232.327</td>
+                                <td>0</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Carrer del Pare Manyanet 23</td>
+                                <td>267.779</td>
+                                <td>24</td>
+                                <td>Portugal 12</td>
+                                <td>83.689</td>
+                                <td>0</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Onze de Setembre 37</td>
+                                <td>358.828</td>
+                                <td>23</td>
+                                <td>Carrer del Pare Manyanet 23</td>
+                                <td>267.779</td>
+                                <td>0</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Edifici MediaTIC</td>
+                            <td rowspan="5">C Roc Boronat 117</td>
+                            <td rowspan="5"><p>El districte de Sant Martí va ser en el passat el testimoni de la revolució industrial de Barcelona, i ara es converteix en el protagonista de la segona revolució, la tecnològica. Al capdavant hi ha un edifici que ha rebut tots els elogis de sostenibilitat i eficiència: l'Edifici MediaTIC.</p></td>
+                            <td>Castella 28</td>
+                            <td>421.719</td>
+                            <td>22</td>
+                            <td>Carrer Pujades 103</td>
+                            <td>499.995</td>
+                            <td>18</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Sancho de &Aacute;vila 104</td>
+                                <td>290.862</td>
+                                <td>19</td>
+                                <td>Pallars 462</td>
+                                <td>320.767</td>
+                                <td>17</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Sancho de &Aacute;vila 170</td>
+                                <td>148.505</td>
+                                <td>19</td>
+                                <td>Bol&iacute;via 76</td>
+                                <td>256.671</td>
+                                <td>17</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Pujades 121</td>
+                                <td>454.354</td>
+                                <td>14</td>
+                                <td>Ciutat de Granada 168</td>
+                                <td>391.071</td>
+                                <td>14</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Roc Boronat 134</td>
+                                <td>111.139</td>
+                                <td>11</td>
+                                <td>Sancho de &Aacute;vila 104</td>
+                                <td>290.862</td>
+                                <td>13</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc del Poblenou</td>
+                            <td rowspan="5">Av Litoral 59</td>
+                            <td rowspan="5"><p>El parc del Poblenou, al front marítim de Barcelona, és fruit de la transformació urbanística que va viure la ciutat durant els Jocs Olímpics del 1992. S’aixeca en un espai on hi havia un antic abocador, fàbriques obsoletes i l’antiga estació de mercaderies del Poblenou. Ara és un espai verd ple de camins i amb àrees infantils i pistes esportives. </p></td>
+                            <td>Passeig de Garcia F&agrave;ria 21</td>
+                            <td>450.319</td>
+                            <td>21</td>
+                            <td>Carrer del Doctor Trueta 221</td>
+                            <td>343.818</td>
+                            <td>21</td>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Avda. Litoral 84</td>
+                                <td>154.233</td>
+                                <td>17</td>
+                                <td>Avinguda Litoral 72</td>
+                                <td>135.179</td>
+                                <td>16</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Passeig de Taulat 116</td>
+                                <td>423.063</td>
+                                <td>12</td>
+                                <td>Passeig de Taulat 116</td>
+                                <td>423.063</td>
+                                <td>11</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Avinguda Litoral 72</td>
+                                <td>135.179</td>
+                                <td>12</td>
+                                <td>Passeig de Garcia F&agrave;ria 21</td>
+                                <td>450.319</td>
+                                <td>5</td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td>Carrer del Doctor Trueta 221</td>
+                                <td>343.818</td>
+                                <td>0</td>
+                                <td>Avda. Litoral 84</td>
+                                <td>154.233</td>
+                                <td>4</td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc de les Rieres d'Horta</td>
+                            <td rowspan="5">Av Estatut de Catalunya 21</td>
+                            <td rowspan="5"><p>Natura, innovació i tecnologia al servei del medi ambient conflueixen en l'acabat d'inaugurar parc de les Rieres d’Horta, que ocupa la zona per on passava l’aigua dels torrents que baixaven de Collserola. Modern i sostenible, el parc té una xarxa d’enllumenat ecoeficient i un recorregut botànic adaptat al terreny i al clima que permet descobrir nombroses espècies mediterrànies.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tr>
+            
+                        <tr style="background-color:#d6eaf8">
+                            <td rowspan="5">Parc de Cervantes</td>
+                            <td rowspan="5">Av Diagonal 706</td>
+                            <td rowspan="5"><p>L’enorme mar de roses en flor que des de la primavera fins a la tardor inunda el parc de Cervantes mostra tot un espectacle per als sentits i és una delícia tant per a la vista com per a l’olfacte. Situat en plena Zona Universitària, molt a prop del Palau de Pedralbes, el parc de Cervantes convida a gaudir de l’espectacle dels seus 10.000 rosers repartits en parterres i envoltats de gespa frondosa.</p>
+</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background-color:#d6eaf8">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tr>
+            
+            </table>
+        </body>
+    </html>
